@@ -9,5 +9,5 @@ from . import views
 urlpatterns = [
     # TODO: Fill in URL patterns and views here.
     # re_path(r'', TemplateView.as_view(template_name="blogging_for_humans_3/base.html")),
-    url(r"^aaa", views.return_first_model_if_exists),
+    url(r"^abcd", views.return_first_model_if_exists),
 ]
