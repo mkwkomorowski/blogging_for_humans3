@@ -3,6 +3,8 @@ blogging_for_humans_3 Django application initialization.
 """
 
 from django.apps import AppConfig
+from edx_django_utils.plugins import PluginURLs
+from openedx.core.djangoapps.plugins.constants import ProjectType
 
 
 class BloggingForHumans3Config(AppConfig):
@@ -11,3 +13,13 @@ class BloggingForHumans3Config(AppConfig):
     """
 
     name = 'blogging_for_humans_3'
+
+    plugin_app = {
+        PluginURLs.CONFIG: {
+            ProjectType.LMS: {
+                PluginURLs.NAMESPACE: name,
+                PluginURLs.REGEX: "^blogging_for_humans_3/",
+                PluginURLs.RELATIVE_PATH: "urls",
+            }
+        },
+    }
