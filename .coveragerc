@@ -1,0 +1,10 @@
+[run]
+branch = True
+data_file = .coverage
+source=blogging_for_humans_3
+omit =
+    test_settings.py
+    */migrations/*
+    *admin.py
+    */static/*
+    */templates/*
