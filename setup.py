@@ -157,4 +157,9 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.8',
     ],
+    entry_points={
+        "lms.djangoapp": [
+            "blogging_for_humans_3 = blogging_for_humans_3.apps:BloggingForHumans3Config",
+        ],
+    },
 )
