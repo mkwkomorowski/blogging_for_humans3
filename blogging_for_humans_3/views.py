@@ -8,5 +8,6 @@ def return_first_model_if_exists(request):
     result = list_of_models[0] if list_of_models else 'abcd'
     print('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
     print(result)
+    print(type(result))
     print('bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb')
-    return HttpResponse("result: " + (str(result)))
+    return HttpResponse(result)
